@@ -1,0 +1,36 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.your_flutter_app"> <!-- Reemplaza com.example.your_flutter_app con tu paquete de aplicación -->
+
+    <!-- Asegúrate de que este permiso esté dentro del <manifest> -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:label="flutter_application_1"
+        android:name="${applicationName}"
+        android:icon="@mipmap/ic_launcher">
+        <!-- Configuración de tu actividad principal, asegúrate de que no haya duplicados -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:taskAffinity=""
+            android:theme="@style/LaunchTheme"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustResize">
+            
+            <!-- Resto de la configuración de tu actividad principal -->
+
+        </activity>
+
+        <!-- Otros componentes de tu aplicación -->
+
+        <!-- No elimines esta meta-data -->
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
+    </application>
+
+    <!-- Configuración adicional del manifest, como <queries> si es necesario -->
+
+</manifest>
